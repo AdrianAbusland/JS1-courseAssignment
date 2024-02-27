@@ -1,0 +1,17 @@
+.error{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    height: 75vh;
+    min-width: 327px;
+}
+
+h1{
+    font-size: 35px;
+}
+
+@media (max-width: 600px){
+    h1{
+        font-size: 28px;
+    }
+}

@@ -1,0 +1,35 @@
+.buy-button-container{
+    display: flex;
+    max-width: max-content;
+}
+
+.buy-button{
+    text-decoration: none;
+    background-color: var(--color-purple);
+    color: var(--color-white);
+    border-radius: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 0;
+    box-shadow: 5px 5px 2px var(--color-very-dark);
+}
+
+.button:hover{
+    color: var(--color-medium-light);
+}
+
+.show-more-button{
+    text-decoration: none;
+    font-size: 25px;
+    background-color: var(--color-purple);
+    color: var(--color-white);
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 2px var(--color-very-dark);
+}
+
+/* .show-more-button:hover{
+    color: var(--color-medium-light);
+} */

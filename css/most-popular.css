@@ -1,0 +1,52 @@
+.most-popular{
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+    justify-content: space-evenly;
+  }
+
+  #display-container{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+    justify-content: space-evenly;
+  }
+  
+  .mp-h2-container{
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+    height: max-content;
+  }
+  
+  .mp-h2{
+    font-size: 30px;
+  }
+
+  .mp-sw-prices-container{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .mp-titles{
+    font-size: 20px;
+  }
+
+  .mp-prices{
+    font-size: 20px;
+  }
+
+  .show-more-button-container{
+    display: flex;
+    justify-content: center;
+    flex-basis: 100%;
+    padding: 10px;
+  }
+
+  @media (max-width: 765px) {
+    .mp-h2{
+        font-size: 25px;
+    }
+}
+
+  

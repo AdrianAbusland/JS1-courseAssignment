@@ -1,0 +1,17 @@
+body {
+  color: var(--color-primary);
+  background-color: var(--color-dark);
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-flow: column wrap;
+  min-width: 327px;
+  margin: 0;
+}
+
+main{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  gap: 1em 0px;
+  flex-basis: 100%;
+}

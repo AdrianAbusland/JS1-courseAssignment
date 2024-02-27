@@ -1,0 +1,17 @@
+.about-container{
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    align-self: center;
+    min-height: 75vh;
+    padding: 10px;
+    max-width: 75vw;
+}
+
+.about-h1{
+    font-size: 35px;
+}
+
+.about-h2{
+    font: 25px;
+}

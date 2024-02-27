@@ -1,0 +1,33 @@
+.contact-container{
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    align-self: center;
+    min-height: 75vh;
+    padding: 10px;
+    max-width: 75vw;
+    min-width: 75vw;
+}
+
+.contact-h1{
+    font-size: 35px;
+}
+
+.contact-h2{
+    font-size: 25px;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    gap: 1em;
+}
+
+li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}

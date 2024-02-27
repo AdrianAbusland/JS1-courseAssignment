@@ -1,0 +1,15 @@
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.highlight{
+  text-decoration: underline;
+}
+
+.gamecover{
+  max-width: 327px;
+  width: 327px;
+  height: 424px;
+  flex-shrink: 0;
+  border-radius: 10px;
+}
