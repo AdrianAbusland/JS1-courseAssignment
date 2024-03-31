@@ -78,6 +78,12 @@ function removeFromCart(item) {
     }
 }
 
+// Call function to display total price when the page loads
+window.addEventListener('load', () => {
+    displayTotalPrice();
+    console.log('Cart page loaded');
+});
+
 // Function to calculate and display the total price
 function displayTotalPrice() {
     // Check if localStorage is available
@@ -100,13 +106,6 @@ function displayTotalPrice() {
         console.error('localStorage is not supported. Unable to retrieve cart items.');
     }
 }
-
-
-// Call function to display total price when the page loads
-window.addEventListener('load', () => {
-    displayTotalPrice();
-    console.log('Cart page loaded');
-});
 
 // Function to add product to cart
 function addToCart(product) {
@@ -142,6 +141,13 @@ function continueShopping() {
 // Add event listener to the "Continue Shopping" button
 document.getElementById('continue-shopping-btn').addEventListener('click', continueShopping);
 
+// Function to handle clicking on "Proceed to Checkout" button
+function proceedToCheckout() {
+    window.location.href = '../checkout/index.html'; // Redirect to the checkout page
+}
+
+// Add event listener to the "Proceed to Checkout" button
+document.getElementById('checkout-btn').addEventListener('click', proceedToCheckout);
 
 
 
