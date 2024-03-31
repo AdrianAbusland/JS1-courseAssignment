@@ -78,6 +78,34 @@ function removeFromCart(item) {
     }
 }
 
+
+
+// Function to add product to cart
+function addToCart(product) {
+    // Check if localStorage is available
+    if (typeof Storage !== 'undefined') {
+        // Retrieve existing cart items from localStorage or initialize an empty array
+        let cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+
+        // Add the product to the cart
+        cartItems.push(product);
+
+        // Store the updated cart items in localStorage
+        localStorage.setItem('cart', JSON.stringify(cartItems));
+
+        // Refresh the cart display
+        displayCartItems();
+    } else {
+        console.error('localStorage is not supported. Unable to add item to cart.');
+    }
+}
+
+// Call function to display cart items when the page loads
+window.addEventListener('load', () => {
+    displayCartItems();
+    console.log('Cart page loaded');
+});
+
 // Call function to display total price when the page loads
 window.addEventListener('load', () => {
     displayTotalPrice();
@@ -106,32 +134,6 @@ function displayTotalPrice() {
         console.error('localStorage is not supported. Unable to retrieve cart items.');
     }
 }
-
-// Function to add product to cart
-function addToCart(product) {
-    // Check if localStorage is available
-    if (typeof Storage !== 'undefined') {
-        // Retrieve existing cart items from localStorage or initialize an empty array
-        let cartItems = JSON.parse(localStorage.getItem('cart')) || [];
-
-        // Add the product to the cart
-        cartItems.push(product);
-
-        // Store the updated cart items in localStorage
-        localStorage.setItem('cart', JSON.stringify(cartItems));
-
-        // Refresh the cart display
-        displayCartItems();
-    } else {
-        console.error('localStorage is not supported. Unable to add item to cart.');
-    }
-}
-
-// Call function to display cart items when the page loads
-window.addEventListener('load', () => {
-    displayCartItems();
-    console.log('Cart page loaded');
-});
 
 // Function to handle clicking on "Continue Shopping" button
 function continueShopping() {
